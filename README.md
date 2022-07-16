@@ -2,7 +2,7 @@
 
 Runs [Webhint](https://webhint.io) and [pa11y](https://pa11y.org) (accessibility testing tools) on one or more provided URLs. Results will be output into the logs of the action.
 
-This action will currently not (usually?) break when accessibility problems occur. The good side of this is that many typical sites will exhibit a fairly high ratio of "false positives" and similar.
+This action _will currently not break_ when accessibility problems occur. The good side of this is that many typical sites will exhibit a fairly high ratio of "false positives" and similar.
 
 _Note that this action is a subset of the "full" [a11ytester](https://github.com/mikaelvesavuori/a11ytester) project, since GitHub Actions seems incapable of running Lighthouse which, by the way, is actually not very good anyway._
 
