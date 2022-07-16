@@ -1,0 +1,4 @@
+{
+  "extends": ["accessibility", "web-recommended"],
+  "formatters": ["json"]
+}

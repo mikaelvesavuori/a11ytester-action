@@ -1,0 +1,16 @@
+name: 'a11ytester-action'
+description: 'Runs accessibility testing tools (webhint, pa11y) on one or more provided URLs.'
+branding:
+  icon: 'user-check'
+  color: 'yellow'
+inputs:
+  urls:
+    description: "A list including one or more escaped URLs to test in the format (single) '[\"www.google.com\"]' or (multiple) '[\"www.google.com\",\"www.reddit.com\"]'."
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/install.sh
+      shell: bash
+    - run: ${{ github.action_path }}/script.sh "${{ inputs.urls }}"
+      shell: bash

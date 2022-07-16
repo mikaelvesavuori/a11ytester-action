@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      # Run private
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Accessibility scan
+        uses: ./
+        with:
+          urls: '[\"www.google.com\"]'
