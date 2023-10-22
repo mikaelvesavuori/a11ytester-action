@@ -3,7 +3,7 @@
 set -o pipefail
 
 echo "Installing pa11y..."
-npm install -g pa11y
+npm install -g pa11y-ci
 
 echo "Installing Webhint..."
 npm install -g hint
