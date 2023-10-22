@@ -27,6 +27,10 @@ function runTest() {
   mkdir -p results/$FOLDER/webhint
   mkdir -p results/$FOLDER/pa11y
 
+  echo "Checking configs..."
+  cat .pa11yci
+  cat .hintrc
+
   echo "Running Webhint test on $URL..."
   npx hint $URL >results/$FOLDER/webhint/results.txt
   echo "||||||||||||||||||||||"
