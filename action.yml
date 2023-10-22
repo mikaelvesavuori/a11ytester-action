@@ -12,5 +12,5 @@ runs:
   steps:
     - run: ${{ github.action_path }}/install.sh
       shell: bash
-    - run: ${{ github.action_path }}/script.sh "${{ inputs.urls }}"
+    - run: ${{ github.action_path }}/test.sh "${{ inputs.urls }}"
       shell: bash
