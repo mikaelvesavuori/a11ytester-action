@@ -1,4 +1,10 @@
 {
   "extends": ["accessibility", "web-recommended"],
-  "formatters": ["json"]
+  "formatters": ["json"],
+  "connector": {
+    "name": "chromium",
+    "options": {
+      "flags": ["--headless", "--disable-gpu"]
+    }
+  }
 }
