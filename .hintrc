@@ -2,9 +2,9 @@
   "extends": ["accessibility", "web-recommended"],
   "formatters": ["json"],
   "connector": {
-    "name": "chromium",
+    "name": "puppeteer",
     "options": {
-      "flags": ["--headless", "--disable-gpu"]
+      "headless": true
     }
   }
 }
