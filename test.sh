@@ -34,7 +34,7 @@ function runTest() {
   npx hint $URL
 
   echo "Running pa11y test on $URL..."
-  npx pa11y-ci $URL --level error --reporter json >results/$FOLDER/pa11y/results.json
+  npx pa11y-ci $URL --reporter json >results/$FOLDER/pa11y/results.json
   echo "||||||||||||||||||||||"
   echo "|||| pa11y results |||"
   echo "||||||||||||||||||||||"
