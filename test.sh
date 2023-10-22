@@ -28,10 +28,11 @@ function runTest() {
   mkdir -p results/$FOLDER/pa11y
 
   echo "Running Webhint test on $URL..."
+  npx hint $URL >results/$FOLDER/webhint/results.txt
   echo "||||||||||||||||||||||"
   echo "||| webhint results ||"
   echo "||||||||||||||||||||||"
-  npx hint $URL >results/$FOLDER/webhint/results.json
+  cat results/$FOLDER/webhint/results.txt
 
   echo "Running pa11y test on $URL..."
   npx pa11y-ci $URL --reporter json >results/$FOLDER/pa11y/results.json

@@ -3,8 +3,8 @@
 set -o pipefail
 
 echo "Installing pa11y..."
-npm install -g pa11y-ci
+npm install -D pa11y-ci
 
 echo "Installing Webhint..."
-npm install -g hint
-npm install @hint/formatter-json --save-dev
+npm install -D hint
+npm install -D @hint/formatter-json --save-dev
