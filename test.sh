@@ -31,7 +31,7 @@ function runTest() {
   echo "||||||||||||||||||||||"
   echo "||| webhint results ||"
   echo "||||||||||||||||||||||"
-  npx hint $URL >results/$FOLDER/webhint/report.txt
+  npx hint $URL >results/$FOLDER/webhint/results.json
 
   echo "Running pa11y test on $URL..."
   npx pa11y-ci $URL --reporter json >results/$FOLDER/pa11y/results.json
